@@ -1,1 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
 
+* {
+    font-family: "Mukta";
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 200px;
+}
+
+section.top-page {
+    background: url('../images/informatique.jpg');
+    background-size: cover;
+    height: 30vh;
+    padding: 10px;
+}
+
+/* page de bienvenu */
+.big-title {
+    color: white;
+    font-size: 20px;
+    font-weight:100;
+    padding: 20px 50px;
+}
+
+/* menu navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 300px;
+    margin-left: 50px;
+}
+
+nav.nav li {
+    color: white;
+}
+
+/* logiciels */
+
+.section-logiciels {
+    font-size: 25px;
+    color: white;
+    position: relative;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.section-logiciels::before {
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 95%;
+    height: 3px;
+    bottom: 0;
+}
+
+.logiciels-items {
+    margin: 10px;
+}
+
+
+.best-logiciel {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logiciel-box {
+    position: relative;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.no-grid {
+    min-width: 400px;
+    height: 400px;
+    flex: 0;
+}
+
+
+.logiciel1 {
+    background-image: url(../images/ImgToTxt.png);
+}
+.logiciel2 {
+    background-image: url(../images/Cr-e-pteur.png);
+}
+.logiciel3 {
+    background-image: url(../images/Graph.png);
+}
+.logiciel4 {
+    background-image: url(../images/EditeurTexte.png);
+}
+.logiciel5 {
+    background-image: url(../images/EnlargeX2.png);
+}
+
+
+
+.logiciel-details {
+    position: absolute;
+    margin: 10px;
+    width: 85%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px 20px;
+}
+
+.logiciel-name {
+    text-align-last: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: orangered;
+    line-height: 5px;
+}
+
+.logiciel-description {
+    text-align-last: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    line-height: 5px;
+}
+.prix {
+    font-size: 20px;
+    font-weight: 600;
+    color: orange;
+    line-height: 5px;
+}
